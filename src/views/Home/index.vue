@@ -26,11 +26,10 @@ export default {
         pop
     },
     created() {
-        apiUserInfo().then(res => {
-            console.log(res)
-        }).catch(err => {
-            
-        })
+        this.$api.article.articleList()
+            .then(res => {
+                console.log(res)
+            })
     },
     methods: {
         showPop() {

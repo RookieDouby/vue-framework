@@ -7,7 +7,9 @@ import { router } from './router'
 import '@/mock/'
 import '@/styles/main.scss';
 import store from './store'
+import api from '@/api'
 
+Vue.prototype.$api = api; //将api挂载到vue原型上
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
