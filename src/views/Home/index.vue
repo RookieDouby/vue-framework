@@ -29,7 +29,7 @@ export default {
         this.$api.article.articleList()
             .then(res => {
                 console.log(res)
-            })
+            }); 
     },
     methods: {
         showPop() {
@@ -46,7 +46,7 @@ export default {
         },
         baseCancel() {
             console.log('这个组件点了cancel')
-        }
+        },
     }
 }
 </script>

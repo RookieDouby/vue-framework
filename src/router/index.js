@@ -18,6 +18,11 @@ export const constantRouterMap = [
     path: '/shoppingcart',
     name: 'shoppingCart',
     component: resolve => require(['@/views/Shopping/ShoppingCart.vue'], resolve)
+  },
+  {
+    path: '/refresh',
+    name: 'refresh',
+    component: resolve => require(['@/views/Layout/Refresh.vue'], resolve)
   }
 ]
 

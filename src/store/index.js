@@ -12,7 +12,14 @@ const state = {
 		{name: 'Jim', age: 24, salary: 13000, id: '0002'},
 		{name: 'Jenny', age: 24, salary: 13000, id: '0003'},
 		{name: 'Jerry', age: 35, salary: 30000, id: '0004'},
-	]
+	],
+	network: true
+}
+
+const mutations = {
+	setNetwork: (state, playload) => {
+		state.network = playload
+	}
 }
 
 const store = new Vuex.Store({
@@ -20,7 +27,8 @@ const store = new Vuex.Store({
   modules: {
     user,
   },
-  getters,
+	getters,
+	mutations
 })
 
 export default store
