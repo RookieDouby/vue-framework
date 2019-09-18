@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 // import router from './router/permission.js'
 import { router } from './router'
+import '@/mock/'
 import '@/styles/main.scss';
 import store from './store'
 

@@ -12,6 +12,7 @@
 </template>
 <script>
 import pop from '@/components/pop.vue';
+import { apiUserInfo } from '@/request/api'
 
 export default {
     data() {
@@ -23,6 +24,13 @@ export default {
     },
     components: {
         pop
+    },
+    created() {
+        apiUserInfo().then(res => {
+            console.log(res)
+        }).catch(err => {
+            
+        })
     },
     methods: {
         showPop() {

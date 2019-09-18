@@ -5,7 +5,8 @@ import store from '@/store'
 import { router } from '@/router';
 
 if(process.env.NODE_ENV == 'development') {
-    axios.defaults.baseURL = 'https://www.baidu.com'
+    // axios.defaults.baseURL = 'https://easy-mock.com/mock/5d81c674229be747d294dbc9/zhd'
+    axios.defaults.baseURL = 'http://localhost:8080'
 } else if(process.env.NODE_ENV == 'debug') {
     axios.defaults.baseURL = 'https://www.ceshi.com'
 } else if(process.env.NODE_ENV == 'production'){
